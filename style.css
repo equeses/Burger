@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    font-family: Arial;
+    /* background-image: url('background 1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-size: 16px; */
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+ 
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 65px;
+    align-items: center;
+}
+
+.gt{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.menu-item .link {
+    color:gray;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.welcome {
+    margin-top: 100px;
+    color:white;
+}
+
+.welcome .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btn {
+    display: flex;
+    align-items: center ;
+    justify-content: center ;   
+    padding: 15px 30px;
+    border-radius: 16px;
+    color: white;
+    text-transform: uppercase;
+    background: #E56D16;    
+}
+
+.title {
+    padding-bottom: 20px;
+    max-width: 500px;
+    font-size: 56px;
+}
+
+.text {
+    padding-bottom: 40px;
+    max-width: 500px;
+    font-size: 18px;
+}
+
+.menu-item .link:hover {
+    color: #E56D16;
+    transition: all 0.5s ease-in-out 2s;
+}
+
+.btn:hover  {
+    background: white;
+    color:black;
+}
+
+.gt:hover {
+    color: #E56D16;
+}
+
+button{
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.burger{
+    display: flex;
+    height: 24px;
+    flex-direction: column;
+    width: 40px;
+    justify-content: space-between;
+    background-color: #E56D16;
+    border-radius: 5px;
+    border-radius: 5px;
+    padding: 2px;
+    z-index: 50;
+}
+
+.burger span{
+    height: 2px;
+    background: white;
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px){
+    .burger{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .menu{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        flex-direction: column;
+        background: #E56D16;
+        padding-top: 100px;
+        transition: all 0.5s ease 0s;
+    }
+    .title{
+        font-size: 18px;
+        max-width: 100%;
+    }
+    .text{
+        font-size: 14px;
+        max-width: 100%;
+    }
+    .container{
+        margin-left: 40px;
+    }
+    body{
+
+        max-height: 696px;
+    }
+    .header .container{
+        padding-top: 15px;
+    }
+    .welcome{
+        margin-top: 50px;
+    }
+}
+
+.bgim{
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu.active{
+    left: 0;
+}
+
+/* Я проткнул свою руку шилом
+и теперь вся ладонь занемела,
+я хотел, чтобы было красиво,
+хоть и выглядит скверно.
+Пьяная мразь злорадствовала
+- Тоже, мне, горе...
+А кровь текла по канализации
+в балтийское море.
+Я мечтал видеть их повешенными...
+Тех, кто меня окружал
+перестрелять, как собак бешеных...
+Один из них мне сказал
+- Ты дерьмо! Ты никому не нужен!
+Я ответил, что нужен всем,
+а в его зрачках суженных
+отсвечивал Вифлеем.
+Потом я бил ему морду,
+и меня оттаскивали ****и,
+одну из которых, по ходу,
+я отодрал. На кровати
+в прокуренной комнате, я проснулся
+...окошко царапал снег...
+люди ходили по улице.
+Среди них был только один человек.
+Он зашёл в эту комнату. Мне стало плохо.
+... кажется, это было воскресение...
+Он схватил мою руку - Послушай, Лёха,
+я русский поэт Сергей Есенин!
+- Отстань от меня! - закричал я в ужасе,
+- Ты повесился, предварительно вырезав вены
+ещё в прошлом веке! - и комната кружится,
+выворачивая свои стены. */
+
+/* by code equeses,casioca1 */
